@@ -1,0 +1,59 @@
+body {
+      font-family: Arial, sans-serif;
+        margin: 0;
+          padding: 0;
+            background-image: url('assets/background.png');
+              background-size: cover;
+                background-position: center;
+                  color: #fff;
+                  }
+
+                  header {
+                    display: flex;
+                      justify-content: space-between;
+                        align-items: center;
+                          background-color: rgba(0,0,0,0.6);
+                            padding: 10px 20px;
+                            }
+
+                            .logo {
+                              height: 50px;
+                              }
+
+                              nav a {
+                                margin: 0 10px;
+                                  color: white;
+                                    text-decoration: none;
+                                      font-weight: bold;
+                                      }
+
+                                      .hero {
+                                        text-align: center;
+                                          margin-top: 100px;
+                                          }
+
+                                          .btn {
+                                            display: inline-block;
+                                              padding: 10px 20px;
+                                                background-color: #00bfa6;
+                                                  color: white;
+                                                    text-decoration: none;
+                                                      border-radius: 5px;
+                                                      }
+
+                                                      .form-container {
+                                                        background-color: rgba(0,0,0,0.7);
+                                                          max-width: 400px;
+                                                            margin: 100px auto;
+                                                              padding: 30px;
+                                                                border-radius: 10px;
+                                                                }
+
+                                                                form input, form select, form button {
+                                                                  width: 100%;
+                                                                    margin-bottom: 15px;
+                                                                      padding: 10px;
+                                                                        border: none;
+                                                                          border-radius: 5px;
+                                                                          }
+}

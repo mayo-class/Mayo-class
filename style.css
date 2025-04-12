@@ -1,59 +1,580 @@
-body {
-      font-family: Arial, sans-serif;
-        margin: 0;
-          padding: 0;
-            background-image: url('assets/background.png');
-              background-size: cover;
-                background-position: center;
-                  color: #fff;
-                  }
+* {
+    margin: 0;
+      padding: 0;
+        box-sizing: border-box;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          }
 
-                  header {
-                    display: flex;
-                      justify-content: space-between;
-                        align-items: center;
-                          background-color: rgba(0,0,0,0.6);
-                            padding: 10px 20px;
-                            }
+          body {
+            background: #ffffff;
+              color: #1a1a1a;
+                line-height: 1.6;
+                }
 
-                            .logo {
-                              height: 50px;
-                              }
+                .hero {
+                  background: url('background.png') center/cover no-repeat;
+                    color: white;
+                      text-align: center;
+                        padding: 100px 20px 120px;
+                          position: relative;
+                          }
 
-                              nav a {
-                                margin: 0 10px;
-                                  color: white;
-                                    text-decoration: none;
-                                      font-weight: bold;
-                                      }
+                          .logo {
+                            position: absolute;
+                              top: 20px;
+                                left: 20px;
+                                  width: 120px;
+                                  }
 
-                                      .hero {
-                                        text-align: center;
-                                          margin-top: 100px;
-                                          }
-
-                                          .btn {
-                                            display: inline-block;
+                                  .book-btn {
+                                    position: absolute;
+                                      top: 20px;
+                                        right: 20px;
+                                          background: #005eb8;
+                                            color: white;
                                               padding: 10px 20px;
-                                                background-color: #00bfa6;
-                                                  color: white;
-                                                    text-decoration: none;
-                                                      border-radius: 5px;
+                                                border: none;
+                                                  text-decoration: none;
+                                                    border-radius: 4px;
+                                                      font-weight: bold;
                                                       }
 
-                                                      .form-container {
-                                                        background-color: rgba(0,0,0,0.7);
-                                                          max-width: 400px;
-                                                            margin: 100px auto;
-                                                              padding: 30px;
-                                                                border-radius: 10px;
+                                                      .hero-text h1 {
+                                                        font-size: 2.5rem;
+                                                          margin-top: 60px;
+                                                          }
+
+                                                          .hero-text p {
+                                                            font-size: 1.2rem;
+                                                              margin-top: 10px;
+                                                                color: #dbe9ff;
                                                                 }
 
-                                                                form input, form select, form button {
-                                                                  width: 100%;
-                                                                    margin-bottom: 15px;
-                                                                      padding: 10px;
-                                                                        border: none;
-                                                                          border-radius: 5px;
-                                                                          }
-}
+                                                                section {
+                                                                  padding: 40px 20px;
+                                                                    max-width: 900px;
+                                                                      margin: auto;
+                                                                      }
+
+                                                                      .intro ul {
+                                                                        list-style-type: disc;
+                                                                          padding-left: 20px;
+                                                                            margin-top: 10px;
+                                                                            }
+
+                                                                            .subscription, .appointment {
+                                                                              background: #f4f9fc;
+                                                                                border-radius: 10px;
+                                                                                  padding: 30px 20px;
+                                                                                    margin-top: 30px;
+                                                                                    }
+
+                                                                                    form {
+                                                                                      display: flex;
+                                                                                        flex-direction: column;
+                                                                                          gap: 15px;
+                                                                                          }
+
+                                                                                          form input, form select, form button {
+                                                                                            padding: 12px;
+                                                                                              font-size: 1rem;
+                                                                                                border-radius: 6px;
+                                                                                                  border: 1px solid #ccc;
+                                                                                                  }
+
+                                                                                                  form button {
+                                                                                                    background: #0072ce;
+                                                                                                      color: white;
+                                                                                                        border: none;
+                                                                                                          cursor: pointer;
+                                                                                                            transition: background 0.3s ease;
+                                                                                                            }
+
+                                                                                                            form button:hover {
+                                                                                                              background: #005eb8;
+                                                                                                              }
+
+                                                                                                              .auth {
+                                                                                                                display: flex;
+                                                                                                                  flex-direction: column;
+                                                                                                                    gap: 30px;
+                                                                                                                      margin-top: 30px;
+                                                                                                                      }
+
+                                                                                                                      .auth-box {
+                                                                                                                        background: #eef4f9;
+                                                                                                                          padding: 25px 20px;
+                                                                                                                            border-radius: 10px;
+                                                                                                                            }
+
+                                                                                                                            .auth-box h2 {
+                                                                                                                              margin-bottom: 10px;
+                                                                                                                              }
+
+                                                                                                                              .ceo {
+                                                                                                                                text-align: center;
+                                                                                                                                  margin-top: 40px;
+                                                                                                                                  }
+
+                                                                                                                                  .ceo-img {
+                                                                                                                                    width: 200px;
+                                                                                                                                      height: 200px;
+                                                                                                                                        object-fit: cover;
+                                                                                                                                          border-radius: 100px;
+                                                                                                                                            margin-bottom: 15px;
+                                                                                                                                            }
+
+                                                                                                                                            footer {
+                                                                                                                                              background: #003366;
+                                                                                                                                                color: white;
+                                                                                                                                                  text-align: center;
+                                                                                                                                                    padding: 20px;
+                                                                                                                                                      margin-top: 40px;
+                                                                                                                                                        font-size: 0.9rem;
+                                                                                                                                                        }
+                                                                                                                                                        .contact-buttons {
+                                                                                                                                                            display: flex;
+                                                                                                                                                              justify-content: center;
+                                                                                                                                                                gap: 15px;
+                                                                                                                                                                  margin: 30px 0;
+                                                                                                                                                                  }
+
+                                                                                                                                                                  .contact-buttons a {
+                                                                                                                                                                    text-decoration: none;
+                                                                                                                                                                      padding: 12px 20px;
+                                                                                                                                                                        border-radius: 5px;
+                                                                                                                                                                          font-weight: 600;
+                                                                                                                                                                            transition: all 0.3s ease;
+                                                                                                                                                                            }
+
+                                                                                                                                                                            .insta-btn {
+                                                                                                                                                                              background-color: #e1306c;
+                                                                                                                                                                                color: white;
+                                                                                                                                                                                }
+
+                                                                                                                                                                                .insta-btn:hover {
+                                                                                                                                                                                  background-color: #c82361;
+                                                                                                                                                                                  }
+
+                                                                                                                                                                                  .call-btn {
+                                                                                                                                                                                    background-color: #0072ce;
+                                                                                                                                                                                      color: white;
+                                                                                                                                                                                      }
+
+                                                                                                                                                                                      .call-btn:hover {
+                                                                                                                                                                                        background-color: #005ea6;
+                                                                                                                                                                                        }
+                                                                                                                                                        
+
+
+        
+           
+             
+                
+              
+                  
+
+                
+               
+                   
+                      
+                      
+                  
+                            
+
+                     
+                    
+                            
+
+                          
+                      
+                    
+                    
+                   
+                                      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               
+                     
+                                       
+
+                            
+                      
+                                   
+                                        
+                                            
+                                          
+                                        
+                                                  
+
+                                              
+                                              
+                                           
+                                               
+                                               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          
+                                                                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 
+                                                            
+                                                            
+                                                                  
+                                                    
+                                                                   
+                                                                         
